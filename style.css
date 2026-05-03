@@ -345,3 +345,45 @@ body {
         gap: 10px;
     }
 }
+
+
+
+
+/* 1. All images are now Black and White */
+.memory-item img {
+    width: 100%;
+    filter: grayscale(100%) contrast(1.2); 
+    border: 1px solid #000;
+    transition: filter 0.5s ease; /* Optional: adds color back on hover */
+}
+
+.memory-item img:hover {
+    filter: grayscale(0%);
+}
+
+.memory-item figcaption {
+    font-family: 'Merriweather', serif;
+    font-size: 0.85rem;
+    margin-top: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* 2. Fixes images to the same size in the grid */
+.memory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.memory-grid .memory-item img {
+    height: 250px; /* Forces all small images to same height */
+    object-fit: cover; /* Prevents stretching */
+}
+
+/* 3. First image remains large and distinct */
+.feature-photo img {
+    height: 500px;
+    object-fit: cover;
+}
