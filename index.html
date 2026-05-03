@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Aswin Chronicles | Aswin K Anil's Personal Blog</title>
+    <title>The Aswin Chronicles | Software Engineer & Full-Stack Developer</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Personal blog of Aswin K Anil, a graduate from AVIT college under Vinayaka Mission University. Exploring thoughts, technology, and life.">
-    <meta name="keywords" content="Aswin K Anil, AVIT College, Vinayaka Mission University, Blog, Personal Website">
+    <meta name="description" content="Official digital broadsheet of Aswin K Anil, a Software Engineer at Wistora IQ Solutions and AVIT graduate. Exploring full-stack development and Chennai memories.">
+    <meta name="keywords" content="Aswin K Anil, Software Engineer, Wistora IQ Solutions, AVIT College, Chennai Bureau, aswinkanil.xyz">
     <meta name="author" content="Aswin K Anil">
-    
+    <link rel="canonical" href="https://aswinkanil.xyz/">
+
     <!-- Open Graph for Social Sharing -->
-    <meta property="og:title" content="The Aswin Chronicles">
-    <meta property="og:description" content="Personal newspaper-style blog of Aswin K Anil.">
+    <meta property="og:title" content="The Aswin Chronicles | Aswin K Anil">
+    <meta property="og:description" content="A newspaper-style blog exploring software engineering and cherished memories from Chennai.">
+    <meta property="og:image" content="images/og-preview.jpg">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aswinkanil.xyz/">
+    <meta name="twitter:card" content="summary_large_image">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,17 +26,37 @@
     
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Schema.org for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Aswin K Anil",
+      "jobTitle": "Software Engineer",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Wistora IQ Solutions"
+      },
+      "url": "https://aswinkanil.xyz"
+    }
+    </script>
 </head>
 <body>
+    <!-- Hidden Audio for Auto-play -->
+    <audio id="bg-music" loop>
+        <source src="audio/stranger-things-season-5-finale-soundtrack-i-believe-by-dan-romer-ending-theme-128-ytshorts.savetube.me (1).mp3" type="audio/mpeg">
+    </audio>
+
     <div class="reading-progress"></div>
 
     <div class="newspaper-container">
         <!-- Header / Masthead -->
         <header class="masthead">
             <div class="top-bar">
-                <span id="current-date" class="date-display">Date</span>
-                <span class="edition">Vol. 1, No. 1</span>
-                <span class="price">Daily Edition</span>
+                <span id="current-date" class="date-display">Sunday, May 3, 2026</span>
+                <span class="edition">Special Edition: Nostalgia</span>
+                <span class="price">aswinkanil.xyz</span>
             </div>
             
             <h1 class="newspaper-title">The Aswin Chronicles</h1>
@@ -43,7 +67,7 @@
                         <li><a href="#front-page">Front Page</a></li>
                         <li><a href="#career">Career</a></li>
                         <li><a href="#education">Education</a></li>
-                        <li><a href="#opinions">Opinions</a></li>
+                        <li><a href="#chennai-memories">Chennai Bureau</a></li>
                     </ul>
                 </nav>
             </div>
@@ -51,7 +75,7 @@
 
         <main class="content-grid">
             <!-- Lead Story -->
-            <article class="lead-story" id="front-page">
+           <article class="lead-story" id="front-page">
                 <h2 class="headline">A NEW ERA BEGINS: ASWIN K ANIL LAUNCHES DIGITAL BROADSHEET</h2>
                 <div class="article-meta">By <span class="author-name">Aswin K Anil</span> | Exclusive</div>
                 
@@ -61,11 +85,47 @@
                     <p>elcome to the inaugural issue of The Aswin Chronicles. In an age where digital media moves at the speed of light, we take a moment to pause and reflect through the classic, trusted medium of the broadsheet—reimagined for the web.</p>
                     <p>This space serves as a testament to my journey, thoughts, and technical explorations. It is designed not just to share information, but to provide a reading experience that commands attention and respect, much like the morning papers of yore.</p>
                     <p>As we navigate through the complexities of modern software development, design, and life itself, this publication will document the milestones. From late-night coding sessions to philosophical musings on the nature of technology, expect a diverse range of topics covered with rigorous detail and a touch of vintage flair.</p>
-                    <p>The architecture of this site itself is a nod to both the past and the future. Built with raw, semantic HTML, styled with the precision of CSS Grid, and optimized for search engines, it stands as a digital monolith amidst a sea of fleeting content.</p>
+                    <!-- <p>The architecture of this site itself is a nod to both the past and the future. Built with raw, semantic HTML, styled with the precision of CSS Grid, and optimized for search engines, it stands as a digital monolith amidst a sea of fleeting content.</p> -->
                 </div>
             </article>
+
+            <!-- Chennai Memories Section (The Group Photos) -->
+            <section class="chennai-bureau" id="chennai-memories">
+                <h2 class="sub-headline">The Chennai Bureau: Missing Those Days</h2>
+                <div class="article-meta">Special Photo Feature: The Brotherhood</div>
+                
+                <p class="section-intro">A collection of moments captured during the Chennai days. More than just colleagues or classmates, these are the people who defined an era of growth, laughter, and late-night coding. <strong>Missing those days.</strong></p>
+
+                <div class="memories-layout">
+                    <!-- Large Feature Photo -->
+                    <figure class="memory-item feature-photo">
+                        <img src="images/IMG-20231222-WA0002.jpg" alt="Chennai Group Memory 1">
+                        <figcaption>The Core Team: A mid-day break during the peak of our Chennai tenure.</figcaption>
+                    </figure>
+
+                    <!-- Secondary Photos Grid -->
+                    <div class="memory-grid">
+                        <figure class="memory-item">
+                            <img src="images/IMG-20240118-WA0008.jpg" alt="Chennai Group Memory 2">
+                            <figcaption>Chennai Evenings</figcaption>
+                        </figure>
+                        <figure class="memory-item">
+                            <img src="images/IMG_20230930_210726.jpg" alt="Chennai Group Memory 3">
+                            <figcaption>The Freelance Hustle</figcaption>
+                        </figure>
+                        <figure class="memory-item">
+                            <img src="images/IMG_3587.JPG" alt="Chennai Group Memory 4">
+                            <figcaption>Late Night Sessions</figcaption>
+                        </figure>
+                        <figure class="memory-item">
+                            <img src="images/Screenshot_20231225-214513_WhatsAppBusiness.jpg" alt="Chennai Group Memory 5">
+                            <figcaption>Unforgettable Moments</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
             
-            <article class="secondary-story" id="career">
+             <article class="secondary-story" id="career">
                 <h2 class="sub-headline">The Professional Journey: From Startup to Software Engineer</h2>
                 <div class="article-meta">Career Milestone</div>
                 <div class="article-content">
@@ -88,42 +148,52 @@
                 </div>
             </article>
 
-            <!-- Sidebar -->
             <aside class="sidebar">
                 <div class="ad-space">
                     <h3>Social Directory</h3>
                     <ul class="social-links">
-                        <li><a href="https://www.instagram.com/aswink_anil/" target="_blank" rel="noopener noreferrer">Instagram: @aswink_anil</a></li>
-                        <li><a href="https://www.instagram.com/travel__foodies_?igsh=MW1vOGgyNWFjNTJsNw==" target="_blank" rel="noopener noreferrer">Food Page: @travel__foodies_</a></li>
-                        <li><a href="https://www.linkedin.com/in/aswin-k-anil-6b43b4370/" target="_blank" rel="noopener noreferrer">LinkedIn: Aswin K Anil</a></li>
-                        <li><a href="https://www.facebook.com/aswin.kanil.77" target="_blank" rel="noopener noreferrer">Facebook: Aswin K Anil</a></li>
+                        <li><a href="https://www.instagram.com/aswink_anil/" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/aswin.k.anil" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/travel__foodies_/" target="_blank">Travel & Foodies</a></li>
+                        <li><a href="https://www.linkedin.com/in/aswin-k-anil-6b43b4370/" target="_blank">LinkedIn</a></li>
                     </ul>
                 </div>
-                
                 <div class="briefs">
-                    <h3 class="briefs-title">In Brief</h3>
-                    <ul class="briefs-list">
-                        <li>
-                            <strong>SEO Mastery:</strong> This broadsheet is meticulously optimized for search engine crawlers, ensuring global reach.
-                        </li>
-                        <li>
-                            <strong>Performance:</strong> Lightweight architecture ensures rapid delivery to modern digital devices.
-                        </li>
-                        <li>
-                            <strong>Aesthetics:</strong> Typography carefully selected to reduce eye strain and promote prolonged reading.
-                        </li>
-                    </ul>
+                    <h3 class="briefs-title">Editor's Note</h3>
+                    <p>Dedicated to the friends who made the journey worthwhile. You guys are the real headlines.</p>
                 </div>
             </aside>
         </main>
 
         <footer class="newspaper-footer">
-            <p>&copy; <span id="copyright-year"></span> Aswin K Anil. All rights reserved.</p>
-            <p>Printed locally via the World Wide Web.</p>
+            <p>&copy; <span id="copyright-year">2026</span> Aswin K Anil. All rights reserved.</p>
+            <p>aswinkanil.xyz</p>
         </footer>
     </div>
 
-    <!-- Script -->
-    <script src="script.js"></script>
+    <script>
+        const now = new Date();
+        document.getElementById('current-date').textContent = now.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+        document.getElementById('copyright-year').textContent = now.getFullYear();
+
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.querySelector(".reading-progress").style.width = scrolled + "%";
+        };
+
+        // AUTO-PLAY AUDIO
+        const music = document.getElementById('bg-music');
+        const startAudio = () => {
+            music.play().catch(() => {});
+            document.removeEventListener('click', startAudio);
+        };
+        document.addEventListener('click', startAudio);
+        window.addEventListener('load', () => {
+            music.volume = 0.4;
+            music.play().catch(() => {});
+        });
+    </script>
 </body>
 </html>
